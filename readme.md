@@ -1,0 +1,1 @@
+A training project for learning quarkus and kubernetes

@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  labels:
+    app.kubernetes.io/name: "pv"
+    app.kubernetes.io/part-of: "oz.history.app"
+  name: "pv"
+spec:
+  storageClassName: manual
+  capacity:
+    storage: "10Gi"
+  volumeMode: "Filesystem"
+  accessModes:
+    - "ReadWriteOnce"
+  persistentVolumeReclaimPolicy: "Delete"
+  hostPath:
+    path: "/Users/olegzinovev/projects/quarkus-sample-micro/volumes"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/name: "zoo-pv-claim"
+    app.kubernetes.io/part-of: "oz.history.app"
+  name: "zoo-pv-claim"
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: manual

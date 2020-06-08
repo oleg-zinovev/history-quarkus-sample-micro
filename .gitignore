@@ -1,0 +1,27 @@
+########### total ###########
+
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+
+########### backend ###########
+
+# idea
+.idea
+*.iml
+.java-version
+
+# maven
+/**/target
+/**/.project
+/**/.classpath
+/**/.settings
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+###### test db ######
+/volumes/**

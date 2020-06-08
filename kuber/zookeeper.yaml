@@ -65,6 +65,7 @@ spec:
                     values:
                       - zoo
               topologyKey: "kubernetes.io/hostname"
+      # https://medium.com/@zhimin.wen/persistent-volume-claim-for-statefulset-8050e396cc51
       volumes:
         - name: pv
           persistentVolumeClaim:

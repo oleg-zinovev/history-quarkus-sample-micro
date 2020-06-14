@@ -359,6 +359,7 @@ spec:
   template:
     metadata:
       labels:
+        app.kubernetes.io/part-of: "oz.history.app"
         app: kafka
       annotations:
     spec:

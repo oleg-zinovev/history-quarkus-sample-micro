@@ -20,7 +20,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <scala.version>2.13.2</scala.version>
+        <scala.version>2.13.9</scala.version>
         <quarkus.version>1.5.0.Final</quarkus.version>
         <org.mockito.version>1.10.19</org.mockito.version>
         <testcontainers.version>1.14.3</testcontainers.version>
